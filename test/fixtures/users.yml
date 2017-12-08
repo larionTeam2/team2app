@@ -3,7 +3,17 @@
 one:
   username: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
+  name: MyString
+  uimage: MyString
+  email: MyString
+  phone: MyString
+
 
 two:
   username: MyString
   password_digest: <%= BCrypt::Password.create('secret') %>
+  name: MyString
+  uimage: MyString
+  email: MyString
+  phone: MyString
+

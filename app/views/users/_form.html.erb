@@ -26,6 +26,27 @@
     <%= form.password_field :password_confirmation, id: :user_password_confirmation %>
   </div>
 
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :user_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uimage %>
+    <%= form.file_field :uimage, id: :user_uimage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :user_phone %>
+  </div>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>
