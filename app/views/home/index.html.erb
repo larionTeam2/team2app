@@ -19,16 +19,16 @@ img {margin-bottom: -7px}
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
-    <a href="http://localhost:3000" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="home" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
 
-    <a href="http://localhost:3000/session/new" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Login</a>
+    <a href="session" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Login</a>
     <% if session[:user_id] %>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black"><%= link_to "Pictures", pictures_path %></a>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black"><%= link_to "Users", users_path %></a>
-        <a class="w3-bar-item w3-button w3-text-grey w3-hover-black"><%= link_to "Logout", logout_path, method: :delete %></a>
+        <a class="w3-bar-item w3-button w3-text-white w3-hover-black"><%= link_to "Pictures", pictures_path %></a>
+        <a class="w3-bar-item w3-button w3-text-white w3-hover-black"><%= link_to "Users", users_path %></a>
+        <a class="w3-bar-item w3-button w3-text-white w3-hover-black"><%= link_to "Logout", logout_path, method: :delete %></a>
     <% end %>
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+   
     
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
   </div>
@@ -45,6 +45,8 @@ img {margin-bottom: -7px}
   <h1><b>ViewIt!</b></h1>
   <p><b>View everything in front of you </b></p>
   <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+<!----search----->
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 </header>
 </div>
 
