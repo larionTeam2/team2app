@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light navbar-expand-lg fixed-top home-header">
+    <div class="navbar-header">
+        <%= link_to image_tag("Logo.gif", width: '95', height: '38'), home_index_path, :class => "navbar-brand" %>
+    </div>
+
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="language nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="https://static.alphacoders.com/wa/English-flag.png" alt="English-flag" style="border:0;"> &nbsp;&nbsp;English &nbsp;&nbsp;
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <!--<%= link_to  "Home", home_index_path, :class => "nav-link" %>-->
+                    <a class="nav-link" href="/Home"><i class="fa fa-home" style="font-size: 20px;" aria-hidden="true"></i> Home</a>
+                </li>
+                <li class="nav-item" style="font: bold;">
+                    <%= link_to  "About", about_path, :class => "nav-link" %>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

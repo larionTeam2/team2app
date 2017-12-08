@@ -1,0 +1,62 @@
+<!-- Navigation -->
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">-->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top home-header">
+    <div class="navbar-header">
+        <%= link_to image_tag("Logo.gif", width: '95', height: '38'), home_index_path, :class => "navbar-brand" %>
+    </div>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/Home">
+                <i class="fa fa-home" style="font-size: 20px;" aria-hidden="true"></i> Home
+            </a>
+        </li>
+        <li class="nav-item" style="font: bold;">
+            <%= link_to  "About", about_path, :class => "nav-link" %>
+        </li>
+    </ul>
+
+    <form class="navbar-form navbar-left" method="POST" action="#">
+        <div class="input-group input-search">
+            <input class="form-control" placeholder="Search..." type="text" name="search" style="width: 350px; height: 38px;">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-danger">
+                    <span class="fa fa-search"></span>
+                </button>
+            </span>
+        </div>
+    </form>
+
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="language nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="https://static.alphacoders.com/wa/English-flag.png" alt="English-flag" style="border:0;"> &nbsp;&nbsp;English &nbsp;&nbsp;
+                    </a>
+                </li>
+                <form class="nav navbar-nav navbar-right">
+                    <div>
+                        <a href="/Login" class="nav-link">
+                            <span>
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Sign in
+                            </span>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="/Register" class="nav-link">
+                            <span>
+                                <i class="fa fa-registered"></i>&nbsp;Sign up
+                            </span>
+                        </a>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>
