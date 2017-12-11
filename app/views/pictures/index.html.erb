@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<p id="notice">
+  <%= notice %>
+</p>
 
 <h1>Pictures</h1>
 
@@ -13,16 +15,31 @@
   </thead>
 
   <tbody>
-    <% @pictures.each do |picture| %>
-      <tr>
-        <td><%= picture.name %></td>
-        <td><%= picture.description %></td>
-        <td><%= picture.image_url %></td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+
+    <div class="col-md-4 col-lg-4 col-xs-4">
+      <% @pictures.each do |picture| %>
+        <tr>
+          <td>
+            <%= picture.name %>
+          </td>
+          <td>
+            <%= picture.description %>
+          </td>
+          <td>
+            <%= picture.image_url %>
+          </td>
+          <td>
+            <%= link_to 'Show', picture %>
+          </td>
+          <td>
+            <%= link_to 'Edit', edit_picture_path(picture) %>
+          </td>
+          <td>
+            <%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </tr>
+        <% end %>
+    </div>
   </tbody>
 </table>
 
