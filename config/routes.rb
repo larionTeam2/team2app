@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get 'session/new'
 
-  get 'login' => "session#new"
+  get '/login', to: "session#new"
 
   post 'login' => "session#create"
 

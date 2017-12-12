@@ -1,16 +1,16 @@
 <!-- Navigation -->
 <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">-->
 <nav class="navbar navbar-light navbar-expand-lg fixed-top home-header">
-    <div class="navbar-header">
+    <div class="navbar-header logoHome">
         <%= link_to image_tag("Logo.gif", width: '95', height: '38'), home_index_path, :class => "navbar-brand" %>
     </div>
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item headerHome">
             <a class="nav-link" href="/Home">
                 <i class="fa fa-home" style="font-size: 20px;" aria-hidden="true"></i> Home
             </a>
-        </li>
-        <li class="nav-item" style="font: bold;">
+        </li>        
+        <li class="nav-item header-About">
             <%= link_to  "About", about_path, :class => "nav-link" %>
         </li>
     </ul>
@@ -34,14 +34,14 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="language nav-item">
+                <li class="language nav-item headerLanguage">
                     <a href="#" class="nav-link">
-                        <img src="https://static.alphacoders.com/wa/English-flag.png" alt="English-flag" style="border:0;"> &nbsp;&nbsp;English &nbsp;&nbsp;
+                        <img src="https://static.alphacoders.com/wa/English-flag.png" alt="English-flag" style="margin: auto;"> &nbsp;&nbsp;English &nbsp;&nbsp;
                     </a>
                 </li>
-                <form class="nav navbar-nav navbar-right">
+                <form class="nav navbar-nav navbar-right frmSign">
                     <div>
-                        <a href="/Login" class="nav-link">
+                        <a href="/login" class="nav-link">
                             <span>
                                 <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Sign in
                             </span>
